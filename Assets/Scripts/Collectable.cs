@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public int amount;
+    public int Value;
 }

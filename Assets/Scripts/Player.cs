@@ -66,6 +66,14 @@ public class Player : MonoBehaviour
         if(collision.gameObject.CompareTag("Key"))
         {
             KeyCount++;
+            Destroy(collision.gameObject);
+        }
+
+        if(collision.gameObject.CompareTag("Collectable"))
+        {
+            Collectable c = collision.gameObject.GetComponent<Collectable>();
+            Collect(c.Value);
+            Destroy(collision.gameObject);
         }
     }
 
@@ -167,5 +175,10 @@ public class Player : MonoBehaviour
             {
                 isOnGround = false;
             }
+    }
+
+    public void Collect(int value)
+    {
+        CollectableCount += value;
     }
 }

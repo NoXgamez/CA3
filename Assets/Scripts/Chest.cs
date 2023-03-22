@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Chest : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class Chest : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            
+            Player p = collision.gameObject.GetComponent<Player>();
+            if(p.KeyCount >= RequiredKeys)
+            {
+                SceneManager.LoadScene("gamescene");
+            }
         }
     }
 }
