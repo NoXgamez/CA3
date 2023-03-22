@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 483971435, guid: c8fd0cb73215590418bcac9318d3962b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 2090077954, guid: c8fd0cb73215590418bcac9318d3962b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -272,7 +272,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1425676973, guid: c8fd0cb73215590418bcac9318d3962b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -333,13 +333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863947c92ddb8f247a601b4f5f634633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 800
-  AirMovementSpeed: 100
-  JumpForce: 7
-  MaxMovementSpeed: 10
-  isAttacking: 0
-  CollectableCount: 0
-  KeyCount: 0
   AttachPoint: {fileID: 8728281245767403283}
 --- !u!1 &8728281245767403283
 GameObject:

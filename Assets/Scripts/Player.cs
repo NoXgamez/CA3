@@ -26,6 +26,9 @@ public class Player : MonoBehaviour
 
     public GameObject AttachPoint;
 
+    public int CollectableCount;
+    public int KeyCount;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,7 +53,20 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.CompareTag("Death"))
+        {
+            body.position = checkpointPosition;
+        }
 
+        if(collision.gameObject.CompareTag("Checkpoint"))
+        {
+            checkpointPosition = transform.position;
+        }
+
+        if(collision.gameObject.CompareTag("Key"))
+        {
+            KeyCount++;
+        }
     }
 
     void UpdateAttack()
