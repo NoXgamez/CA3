@@ -75,6 +75,11 @@ public class Player : MonoBehaviour
             Collect(c.Value);
             Destroy(collision.gameObject);
         }
+
+        if(collision.gameObject.CompareTag("JumpPad"))
+        {
+            isOnGround = false;
+        }
     }
 
     void UpdateAttack()
